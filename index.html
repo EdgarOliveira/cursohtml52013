@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--Arquivo mãe - index-->
+<html lang="pt">
+    <head>
+        <title>Cadeiras.lda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <!--Chamar o arquivo CSS-->
+        <link rel="stylesheet" type="text/css" href="_css/estilo_layout.css">                          
+    </head>
+    <body>
+        <!--Desenhar o layout (elementos de estrutura da página)-->
+        <!--DIV da página Principal-->
+        <div class="sheet_main">
+            <!--Header-->
+            <header class="header_main">
+                <!--DIV do logatipo que está dentro do cabeçalho-->
+                <div class="logo">
+                    <img src="_imagens/logo.png" alt="cadeira" />
+                </div>
+                <!--DIV da publicidade que está dentro do cabeçalho-->
+                <div class="publicidade">
+                    <img id="pub_image" src="_imagens/pub_image1.jpg" alt="">
+                </div>             
+                <!--DIV da imagem variável que está dentro do cabeçalho-->
+                <div class="imagem_variavel">
+                    <img id ="var_image" src="_imagens/img_variavel_ergonomia.png" alt="cadeira" />
+                </div>
+                <!--DIV dos botões que estão dentro do cabeçalho-->
+                <!--Configurar os efeitos dos botões (drop-down list e sombreados)-->
+                <div class="botoes_menu">
+                    <ul>
+                        <!--O elemeto a é o melhor?-->
+                        <li><a>Cadeiras p/venda</a>
+                            <ul>
+                                <li id="page_click_1_1"><a>Cadeiras para visitas</a></li>
+                                <li id="page_click_1_2"><a>Cadeiras executivas</a></li>
+                                <li id="page_click_1_3"><a>Cadeiras operativas</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Serviços</a>
+                            <ul>
+                                <li id="page_click_2_1"><a>Afinação de cadeiras</a></li>
+                                <li id="page_click_2_2"><a>Reparação de estofos</a></li>
+                                <li id="page_click_2_3"><a>Ergonomia</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Zona Cliente</a>
+                            <ul>
+                                <li id="page_click_3_1"><a>Ficha de Cliente</a></li>
+                                <li id="page_click_3_2"><a>Calcular V/entregas</a></li>
+                            </ul>
+                        </li>
+                        <li id="page_click_4"><a>Contactos</a></li>
+                    </ul>
+                </div>
+            </header>
+            <!--DIV do aside e que está dentro da SHEET_MAIN-->
+            <div class="aside">
+                <!--Primeiro artigo-->
+                <article>
+                    <p>Como construir uma cadeira</p>
+                    <iframe class="video"
+                            src="http://www.youtube.com/embed/YkeMhm0h_Js">
+                    </iframe>
+                </article>
+                <!--Segundo artigo-->
+                <article>
+                    <p>Como construir uma cadeira</p>
+                    <iframe class="video"
+                            src="http://www.youtube.com/embed/MJbN8RDgrCg">
+                    </iframe>
+                </article>  
+                <!--Terceiro artigo-->
+                <article>
+                    <p>Como construir uma cadeira</p>
+                    <iframe class="video"
+                            src="http://www.youtube.com/embed/E2LmT6aOATs">
+                    </iframe>
+                </article>
+            </div>
+            <!--DIV do conteúdo do site que está dentro da SHEET_MAIN-->
+            <div class="conteudo">
+                <!--Imagem que vai aparecer na folha de rosto / Info do DOM-->
+                <div class="imagem_conteudo_main">
+                    <img src="_imagens/dom.png" alt="dom" />
+                </div>
+            </div>
+            <!--DIV do rodapé do site que está dentro da SHEET_MAIN-->
+            <div class="footer">
+                <p>&copy; Edgar Oliveira 2013</p>
+            </div>
+            <!--Limpar clears-->
+            <p style="clear: both"></p>
+        </div>
+        <!--Carregou tudo, agora sim podemos carregar o javascript e apis-->
+        <!--Chamar o arquivo JQuery Primeiro-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!--Chamar api do google maps-->
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+        <!--Chamar o arquivo Java Script Segundo, devido ao jquery-->
+        <script type="text/javascript" src="_javascript/java_layout.js"></script>
+    </body>   
+</html>

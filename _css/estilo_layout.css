@@ -1,0 +1,197 @@
+/* Chave especifica, o mesmo motivo igual ao do index.html */
+@charset "UTF-8";
+/*Criar uma div para o id sheet_main - Folha principal que segura todo o site*/
+.sheet_main {
+    /*Delimitar a largura do corpo do site, menos o de cabeçalho*/
+    width: 900px;
+    /*Cor do site*/
+    background-color:  #ffffff;
+    /*Centrar o corpo do site*/
+    /*Cima, direita, baixo, esquerda*/
+    margin: -20px auto 10px auto;
+    /*Para criar uma sombra em torno do objecto, neste caso é o interface*/
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    /*Para que o texto não fique grudado*/
+    padding: 10px;
+    /**/
+}
+/*A partir daqui tudo estará dentro da classe .sheet_main*/
+/*Zona do cabeçalho*/
+/*Formatar o cabeçalho*/
+.sheet_main .header_main {
+    width: 900px;
+    height: 200px;
+    background-image: url("fundo_madeira2.jpg");
+    position: fixed;
+    float: left;
+    border-radius: 10px;
+    z-index: 2;
+}
+/*Formatar o elemento image da classe logo*/
+.sheet_main .logo img {
+    width: 190px;
+    height: 140px;
+    /*    background-color: green;*/
+    float: left;
+    margin-top:20px;
+    margin-left:5px;
+    /*    border-radius: 10px;*/
+}
+/*Formatar o id que suporta a imagem de publicidade*/
+.sheet_main #pub_image {
+    width: 400px;
+    height: 120px;
+    /*    background-color: blue;*/
+    float: left;
+    margin-top:40px;
+    margin-left:45px;
+    position:relative;
+    border-radius: 10px;
+    /*Para criar uma sombra em torno do objecto, neste caso é o interface*/
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+/*Formatar imagens variáveis que mudam com os menus*/
+.sheet_main .imagem_variavel #var_image {
+    width: 120px;
+    height: 102px;
+    /*background-color: chocolate;*/
+    border-radius: 10px;
+    float: right;
+    margin-top:40px;
+    margin-right:60px;
+}
+/*Configuar os botões da página*/
+/*Caixa*/
+.sheet_main .botoes_menu {
+    width: 439px;
+    height: 1px;
+    /*    background-color: blue;    */
+    float: left;
+    margin-top: -4px;
+    margin-left: 0;
+    cursor:pointer;
+}
+/*Efeitos*/
+/*Fazer com que os elementos ul que estão dentro da classe botoes_menu não apareçam*/
+.sheet_main .botoes_menu ul ul {
+    display: none;
+}
+/*Ao passar o rato por cima do menu os elementos li são influenciados pelo hover,
+apareçem e ficam bloqueados*/
+.sheet_main .botoes_menu ul li:hover > ul {
+    display:  block;
+}
+/*Formatar o primeiro ul da class .botoes_menu, todo menu! Apenas a caixa.*/
+.sheet_main .botoes_menu ul {
+    padding: 0 20px;
+    border-radius: 10px;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+    background: -webkit-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+    background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+}
+/*Coloca todos os elementos li dos elementos ul na classe botoes_menu em linha*/
+.sheet_main .botoes_menu ul li {
+    float: left;
+}
+/*Formatar os botões, conteudo que está dentro do elemento a*/
+.sheet_main .botoes_menu ul li a {
+    padding: 5px 10px 5px 10px;
+    display: block;
+    color: #757575;
+    text-decoration: none;
+}
+/*Criar caixa ao passar com o rato por cima (hover) dos elementos li*/
+.sheet_main .botoes_menu ul li:hover {
+    background: #4b545f;
+    background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -webkit-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+}
+/*Ao passar o rato por cima do menu, elementos a, pintar as letras de branco*/
+.sheet_main .botoes_menu ul li:hover a {
+    color: #fff;
+}
+
+/*Formatar os menus e sub-menus ao aceder ao menu*/
+/*Formatar a primeira camada do menu*/
+.sheet_main .botoes_menu ul li:hover > ul {margin:0px; padding: 0px;}
+.sheet_main .botoes_menu ul li:hover > ul li {float: none; display: block;}
+.sheet_main .botoes_menu ul li:hover > ul li a {color: #666; min-width: 150px}
+.sheet_main .botoes_menu ul li:hover > ul li a:hover {color: #fff;}
+.sheet_main .botoes_menu ul li {position: relative}
+.sheet_main .botoes_menu ul li ul {position: absolute; top:28px; left:0px;}
+
+/*Zona principal*/
+/*Formatar todo a class aside*/
+.sheet_main .aside {
+    width: 280px;
+    background-color:  olivedrab;    
+    float: right;
+    margin-top: 200px;
+    border-radius: 10px;
+    padding: 10px;
+}
+/*Formatar todos os elementos com class video*/
+.sheet_main .video {
+    width: 260px;
+    height: 200px;
+    /*padding: 5px;*/
+    margin-left: 10px;    
+}
+/*Formatar o rodapé*/
+.sheet_main .footer {
+    width: 100%;
+    height: 30px;
+    /*    background-color: darkmagenta;*/
+    float: left;
+    clear: both;
+    border-radius: 10px;
+    /*Para criar uma sombra em torno do objecto, neste caso é o interface*/
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    margin-top: 3px;
+    /*Colocar o texto ao centro*/
+    text-align: center;
+}
+/*Formatar todo o conteudo do site*/
+.sheet_main .conteudo {
+    width: 580px;
+    background-color:  white;    
+    float: left;
+    margin-top: 200px;
+    padding: 10px;    
+}
+/*Formatar todos os elementos image que são carregados para dentro da classe 
+imagem_conteudo_main que por sua vez se encontra dento da class conteudo*/
+.imagem_conteudo_main img{
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+}
+/*Formatação de páginas do exterior - Conteudo */
+/*Formatação todos os elemento de texto com nivel 1 de heading*/
+h1 {
+    font-size: larger;
+    color: red;
+}
+/*Para todas as imagens*/
+.imagem_conteudo img {
+    width: 280px;
+    height: 200px;
+    /*Centrar elemento*/
+    /*Cima, direita, baixo, esquerda*/
+    margin: 5px auto 5px auto;
+    padding: 10px;
+}
+/*Google Maps JavaScript API v3*/
+#map-canvas {
+    height: 400px;
+    width: 500px;
+    /*Centrar elemento*/
+    /*Cima, direita, baixo, esquerda*/
+    margin: 5px auto 5px auto;
+    padding: 10px;
+}
